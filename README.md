@@ -39,5 +39,3 @@
 
 [ Java, Kotlin, Spring, SpringBoot, Spring Security, ThymeLeaf, HTML, CSS, Vue, Maria DB, AWS EC2, Docker, Kubernetes, Linux, ORM, JPA, Querydsl, MSA, Eureka, Spring Cloud Gateway, Spring Cloud Config, OpenSearch, sleuth, Zipkin, Kafka, RabbitMq, CI/CD, Jenkins ]
 ——————————————————————————— 기술 스택 미정
-
-장준영 장준영
