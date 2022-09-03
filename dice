@@ -1,0 +1,69 @@
+package src.jinwoo;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Random;
+/**
+ * 8월 29일(월) 부터 9월 3일 (토)
+ */
+
+public class DiceGame {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String Player1;
+        String Player2;
+
+        int Score1 = 0;
+        int Score2 = 0;
+
+        while () {
+            System.out.print("게임을 하시겠습니까? Y/N");
+            ans = sc.nextIn();
+            if (ans == "Y") {
+                System.out.print("Player1 차례입니다");
+                System.out.print("주사위를 던지세요");
+                Player1 = sc.nextLine();
+                if(Player1.equals("")){
+                    int ran = ran.nextInt(6) + 1;
+                    Score1 = ran;
+                    System.out.println("Player1의 숫자는 : " + Score1 + " 입니다.");
+                    System.out.print("Player2 차례입니다");
+                    System.out.print("주사위를 던지세요");
+
+                    Player2 = scan.nextLine();
+
+                    if (Player2.equals("")) {
+                        int ran = ran.nextInt(6) + 1;
+                        Score2 = ran;
+                        System.out.println("Player2의 숫자는 : " + Score2 + " 입니다.");
+                    }
+
+                    if (Score1 > Score2) {
+                        System.out.println("Player1이 이겼습니다");
+                    } else if (Score1 < Score2) {
+                        System.out.println("Player2가 이겼습니다");
+                    } else {
+                        System.out.println("비겼습니다");
+                    }
+                    System.out.println();
+
+                    System.out.println("게임을 계속 할까요? Y/N");
+                }
+                con = scan.nextLine();
+                if (con.equals("Y")) {
+                    continue;
+                }
+                else if(con.equals("N")){
+                    break;
+                }
+
+            } else {
+                System.out.print("게임을 종료하셨습니다");
+                return;
+            }
+
+        }
+    }
+}
