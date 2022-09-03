@@ -18,7 +18,7 @@ public class DiceGame {
         int Score1 = 0;
         int Score2 = 0;
 
-        while () {
+        while (true) {
             System.out.print("게임을 하시겠습니까? Y/N");
             ans = sc.nextIn();
             if (ans == "Y") {
@@ -26,7 +26,8 @@ public class DiceGame {
                 System.out.print("주사위를 던지세요");
                 Player1 = sc.nextLine();
                 if(Player1.equals("")){
-                    int ran = ran.nextInt(6) + 1;
+                    Random random = new Random();
+                    int ran = random.nextInt(6) + 1;
                     Score1 = ran;
                     System.out.println("Player1의 숫자는 : " + Score1 + " 입니다.");
                     System.out.print("Player2 차례입니다");
@@ -35,7 +36,8 @@ public class DiceGame {
                     Player2 = scan.nextLine();
 
                     if (Player2.equals("")) {
-                        int ran = ran.nextInt(6) + 1;
+                        Random random = new Random();
+                        int ran = random.nextInt(6) + 1;
                         Score2 = ran;
                         System.out.println("Player2의 숫자는 : " + Score2 + " 입니다.");
                     }
